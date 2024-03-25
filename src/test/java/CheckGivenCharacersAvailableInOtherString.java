@@ -18,5 +18,20 @@ public class CheckGivenCharacersAvailableInOtherString {
         }else{
             System.out.println("Both string lengths are not matching");
         }
+
+        //solution 2
+        String str1 = "Krishna";
+        String rts1 = "nhsirK";
+        boolean status1 = true;
+            for (char c: str1.toCharArray())  {
+                if(!rts1.contains(Character.toString(c))){
+                    status1 = false;
+                }
+            }
+            if(status1){
+                System.out.println("Both string characters are matchin1");
+            }else{
+                System.out.println("Both string characters are not matching1");
+            }
     }
 }

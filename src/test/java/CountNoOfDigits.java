@@ -9,5 +9,12 @@ public class CountNoOfDigits {
             counter++;
         }
         System.out.println("Number of Digits in given number :" + counter);
+
+
+        //solution 2
+        num =12345;
+        counter = Integer.toString(num).length();
+        System.out.println("Number of Digits in given number :" + counter);
+
     }
 }
