@@ -29,9 +29,9 @@ public class CheckGivenCharacersAvailableInOtherString {
                 }
             }
             if(status1){
-                System.out.println("Both string characters are matchin1");
+                System.out.println("Both string characters are matching");
             }else{
-                System.out.println("Both string characters are not matching1");
+                System.out.println("Both string characters are not matching");
             }
     }
 }

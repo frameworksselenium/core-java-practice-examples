@@ -1,4 +1,5 @@
 import java.util.Arrays;
+import java.util.stream.Collectors;
 
 public class FindMaxMinValueFromArray {
 
@@ -23,5 +24,17 @@ public class FindMaxMinValueFromArray {
             }
         }
         System.out.println("Minimum Value from Array " + min);
+
+        //logic 3
+
+        int min1 = Arrays.stream(array).min().getAsInt();
+        System.out.println("Minimum Value from Array " + min1);
+
+
+        int max1 = Arrays.stream(array).max().getAsInt();
+        System.out.println("Minimum Value from Array " + max1);
+
     }
+
+
 }

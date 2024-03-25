@@ -28,12 +28,12 @@ public class GetDuplicateElementsStringAndCount {
 
         ///Solution:2
         //sort
-        int[] strArry1 = {2,5,7,3,4,3,2,1,1,7,1,1,1,};
+        int[] strArry1 = {2,2,2,1,1,3,4,3,3};
         Arrays.sort(strArry1);
         //System.out.println("Array Values After sort : " + Arrays.toString(strArry1));
 
 
-        for(int i=0; i<strArry1.length-1; i++){
+        for(int i=0; i<strArry1.length; i++){
             int c = 1;
             for(int j=i+1; j<strArry1.length; j++){
                 if(strArry1[i] == strArry1[j]){

@@ -4,10 +4,10 @@ import java.util.Scanner;
 
 public class PalindromeString {
     public static void main(String[] args){
-        Scanner scan = new Scanner(System.in);
+        /*Scanner scan = new Scanner(System.in);
         System.out.println("Please enter string");
-        String value = scan.next();
-        //String value  = "KRK";
+        String value = scan.next();*/
+        String value  = "KRK";
         String rev="";
         for (int i=value.length()-1; i>=0; i--){
          rev = rev + value.charAt(i);

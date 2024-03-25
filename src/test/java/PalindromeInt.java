@@ -3,6 +3,7 @@ public class PalindromeInt {
     public static void main(String[] args){
 
         int num = 121;
+
         int tempNum = num;
         int revNum = 0;
         while(num!=0){

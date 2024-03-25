@@ -15,7 +15,9 @@ public class FindOccurrenceOfGivenChar {
         //logic 2
         int counter=0;
         for(int i=0; i<str.length(); i++){
-            String digi = String.valueOf(str.charAt(i));
+            String digi = Character.toString(str.charAt(i));
+
+            //String digi = String.valueOf(str.charAt(i));
             if(digi.equals(digit)){
                 counter++;
             }

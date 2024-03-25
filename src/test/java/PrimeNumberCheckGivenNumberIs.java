@@ -1,7 +1,7 @@
 public class PrimeNumberCheckGivenNumberIs {
 
     public static void main(String[] args){
-        //it shouls be > 1 and number should divisable with 1 or itself
+        //it should be > 1 and number should divisable with 1 or itself
         int num = 29;
         int count = 0;
         if(num>1){
