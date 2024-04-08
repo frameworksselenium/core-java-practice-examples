@@ -19,11 +19,12 @@ public class RemoveDuplicateCharacters {
         // Single loop Approach 2
         String result = "";
         for (int i = 0; i < myString.length(); i++) {
-            if(!result.contains(String.valueOf(myString.charAt(i)))) {
-                result += String.valueOf(myString.charAt(i));
+            String val = String.valueOf(myString.charAt(i));
+            if(!result.contains(val)) {
+                result += val;
             }
         }
-        System.out.println("After  removing the duplicate characters " + result);
+        System.out.println("After  removing the duplicate characters using loop " + result);
 
         //Set approach 3
         Set<Character> set = new LinkedHashSet<Character>();
@@ -31,11 +32,29 @@ public class RemoveDuplicateCharacters {
         for(char c:charArrray) {
             set.add(Character.valueOf(c));
         }
+        System.out.println("After  removing the duplicate characters using Set " + set);
+
+        //remove the duplicate characters using String Builder
+
         StringBuilder sb = new StringBuilder();
-        for (Character character : set) {
-            sb.append(character);
+        for (char c : myString.toCharArray()) {
+            String cc = String.valueOf(c);
+            if (sb.indexOf(cc) == -1) { // If character is not already in the StringBuilder, append it
+                sb.append(c);
+            }
         }
-        System.out.println("After  removing the duplicate characters " + sb.toString());
+        System.out.println("After  removing the duplicate characters using String Builder " + sb.toString());
+
+        //remove the duplicate characters using String Buffer
+
+        StringBuffer sf = new StringBuffer();
+        for (char c : myString.toCharArray()) {
+            String cc = String.valueOf(c);
+            if (sb.indexOf(cc) == -1) { // If character is not already in the StringBuilder, append it
+                sb.append(c);
+            }
+        }
+        System.out.println("After  removing the duplicate characters using String Buffer " + sb.toString());
 
     }
 }

@@ -32,7 +32,7 @@ public class ParallelStreamExample1 {
         long starttime = System.currentTimeMillis();
         ForkJoinPool fjp1 = new ForkJoinPool(4);
         Runnable callable1 = () -> links.parallelStream().forEach(number -> findBrokenLinks(number));
-//https://java2blog.com/java-8-parallel-stream/#:~:text=In%20case%20of%20Parallel%20stream,to%20create%20and%20manage%20threads.
+        //https://java2blog.com/java-8-parallel-stream/#:~:text=In%20case%20of%20Parallel%20stream,to%20create%20and%20manage%20threads.
         try {
             fjp1.submit(callable1).get();
         } catch (InterruptedException | ExecutionException e) {

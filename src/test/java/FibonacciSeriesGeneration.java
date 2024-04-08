@@ -1,4 +1,5 @@
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.Scanner;
 
 public class FibonacciSeriesGeneration {
@@ -7,7 +8,6 @@ public class FibonacciSeriesGeneration {
 
         int endNumber = 10;
         int num1 = 0, num2 = 1, sum = 0;
-
         ArrayList<Integer> fs = new ArrayList<>();
         for (int n = 1; n <= endNumber; n++) {
             sum = num1 + num2;
@@ -16,9 +16,6 @@ public class FibonacciSeriesGeneration {
             num2 = sum;
         }
         System.out.println("Fibonacci numbers " + fs);
-
-        int endNumber1 = 10;
-        int num11 = 0, num21 = 1, sum1 = 0;
 
     }
 }

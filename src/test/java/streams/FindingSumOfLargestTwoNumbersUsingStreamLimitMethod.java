@@ -1,7 +1,5 @@
 package streams;
 
-import java.time.Duration;
-import java.time.LocalDateTime;
 import java.util.Arrays;
 import java.util.Collections;
 import java.util.Comparator;
@@ -10,9 +8,9 @@ import java.util.List;
 public class FindingSumOfLargestTwoNumbersUsingStreamLimitMethod {
 
     public static void main(String[] args) {
-
+        Integer[] num = {5, 9};
         // random numbers
-        List<Integer> numbers = Arrays.asList(5, 9, 11, 2, 8, 21, 1);
+        List<Integer> numbers = Arrays.asList(num);
 
         //Approach 1
         // find sum of largest 2 numbers using Stream.limit(); method

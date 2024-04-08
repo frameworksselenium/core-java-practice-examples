@@ -2,7 +2,6 @@ public class ReverseString {
     public static void main(String[] args){
 
         String num = "Krishna Reddy";
-        int rev = 0;
 
         //StringBuffer
         StringBuffer sbuff = new StringBuffer(String.valueOf(num));

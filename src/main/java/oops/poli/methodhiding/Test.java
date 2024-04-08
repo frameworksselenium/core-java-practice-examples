@@ -15,5 +15,9 @@ public class Test {
         ab.m1();
 
 
+        A.m1();
+
+        B.m1();
+
     }
 }

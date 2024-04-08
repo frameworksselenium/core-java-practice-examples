@@ -1,14 +1,15 @@
 package streams;
 
-//import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 
+
 import java.util.ArrayList;
 import java.util.List;
 import java.io.IOException;
+
 import java.net.HttpURLConnection;
 import java.net.MalformedURLException;
 import java.net.URL;
@@ -27,7 +28,8 @@ public class ParallelStreamExample {
             //findBrokenLinks(attribValue);
         }
         long starttime = System.currentTimeMillis();
-        links.parallelStream().forEach(e->findBrokenLinks(e));
+       // links.parallelStream().forEach(e->findBrokenLinks(e));
+        links.stream().forEach(e->findBrokenLinks(e));
         long endTime = System.currentTimeMillis();
 
         System.out.println("Total Time taken to execute scrips :" + (endTime - starttime));

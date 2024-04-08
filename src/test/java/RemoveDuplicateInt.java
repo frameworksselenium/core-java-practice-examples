@@ -1,15 +1,17 @@
 import java.util.Arrays;
+import java.util.HashSet;
 import java.util.LinkedHashSet;
 import java.util.Set;
 import java.util.stream.Collectors;
 
 public class RemoveDuplicateInt {
     public static void main(String[] args){
+
+        //approach1
         int number = 123134254;
-        System.out.println("After  removing the duplicate characters " + number);
+        System.out.println("Before  removing the duplicate characters " + number);
         String temp = Integer.toString(number);
 
-        //Streams approach 1
         String noDuplicates = Arrays.asList(temp.split(""))
                 .stream()
                 .distinct()
@@ -20,23 +22,21 @@ public class RemoveDuplicateInt {
         //loop Approach 2
         String result = "";
         for (int i = 0; i < temp.length(); i++) {
-            if(!result.contains(String.valueOf(temp.charAt(i)))) {
-                result += String.valueOf(temp.charAt(i));
+            String val = String.valueOf(temp.charAt(i));
+            if(!result.contains(val)) {
+                result += val;
             }
         }
         System.out.println("After  removing the duplicate characters " + Integer.parseInt(result));
 
-        //Set approach 3
-        Set<Character> set = new LinkedHashSet<Character>();
-        char[] charArrray = temp.toCharArray();
-        for(char c:charArrray) {
-            set.add(Character.valueOf(c));
+        //approach 3
+        HashSet set1 = new HashSet<>();
+        char[] charArrray1 = temp.toCharArray();
+        for(char c:charArrray1) {
+            set1.add(Character.valueOf(c));
         }
-        StringBuilder sb = new StringBuilder();
-        for (Character character : set) {
-            sb.append(character);
-        }
-        System.out.println("After  removing the duplicate characters " + Integer.parseInt(sb.toString()));
+
+        System.out.println("After  removing the duplicate characters " + set1);
 
     }
 }

@@ -1,9 +1,12 @@
+
 public class FindOccurrenceOfGivenChar {
 
     public static void main(String[] args){
-
+// find given character occurrence in given string
         String str = "Hello";
         String digit = "l";
+
+
         //logic1
         int beforeLength = str.length();
         String newStr = str.replace("l", "");
@@ -23,6 +26,17 @@ public class FindOccurrenceOfGivenChar {
             }
         }
         System.out.println("No o Occurrence :" + counter);
+
+        //logic 3
+        String str1 = "Hello";
+        char ch = 'l';
+        int count = 0;
+        for (char c : str1.toCharArray()) {
+            if (c == ch) {
+                count++;
+            }
+        }
+        System.out.println("No of Occurrence :" + count);
 
     }
 }

@@ -7,10 +7,9 @@ public class TryCatch {
         try{
            System.out.println("HI");
         }catch(ArrayIndexOutOfBoundsException | ArithmeticException e) {
-
-        }
-        finally{
-
+            System.out.println("ArrayIndexOutOfBoundsException or ArithmeticException");
+        }finally{
+            System.out.println("Finally block");
         }
     }
 }

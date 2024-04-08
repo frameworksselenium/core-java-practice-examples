@@ -7,7 +7,9 @@ public class FindMaxMinValueFromArray {
 
         int[] array = {12, 33, 56};
 
-        //find max val
+        //Logic1
+        //
+        // find max val
         int max = array[0];
         for(int i=1; i<array.length; i++){
             if(array[i]>max){
@@ -25,12 +27,22 @@ public class FindMaxMinValueFromArray {
         }
         System.out.println("Minimum Value from Array " + min);
 
-        //logic 3
+        //Logic2
+        Arrays.sort(array);
+        int min11 = array[0];
+        System.out.println("Given numbers, min Number is :" + min11);
 
+        //max
+        Arrays.sort(array);
+        int max11 = array[array.length - 1];
+        System.out.println("Given numbers, Largest Number is :" + max11);
+
+        //logic 3
+        // min
         int min1 = Arrays.stream(array).min().getAsInt();
         System.out.println("Minimum Value from Array " + min1);
 
-
+        //max
         int max1 = Arrays.stream(array).max().getAsInt();
         System.out.println("Minimum Value from Array " + max1);
 

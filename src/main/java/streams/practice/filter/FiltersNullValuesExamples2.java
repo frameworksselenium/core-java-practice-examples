@@ -8,6 +8,7 @@ import java.util.stream.Collectors;
 public class FiltersNullValuesExamples2 {
 
     public static void main(String [] args){
+
         List<String> names = Arrays.asList("Jan", "Feb", null, "April", "May", "June", "July", null, "September", null, "November", "December");
 
         List<String> longnames = new ArrayList<String>();

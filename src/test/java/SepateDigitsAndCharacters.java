@@ -6,7 +6,7 @@ public class SepateDigitsAndCharacters {
 
         String str  = "hi123BasicJava3456";
 
-        //approach
+        //approach1
         String digits = str.replaceAll("\\D+", "");
         String letters = str.replaceAll("\\d+", "");
 
@@ -19,7 +19,7 @@ public class SepateDigitsAndCharacters {
         String intValue = "";
         for (char c : str.toCharArray()) {
             if (Character.isDigit(c)) {
-                stringvalue  = stringvalue +c;
+                stringvalue  = stringvalue + c;
             } else if (Character.isLetter(c)) {
                 intValue = intValue + c;
             }

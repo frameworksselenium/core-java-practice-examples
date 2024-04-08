@@ -1,3 +1,8 @@
+import java.util.Arrays;
+import java.util.Collections;
+import java.util.List;
+import java.util.StringTokenizer;
+
 public class CountsWords {
 
     public static void main(String[] args){
@@ -17,6 +22,19 @@ public class CountsWords {
             }
         }
         System.out.println("Logic2-No Of Words :" + counte);
+
+        //Logic3
+        String str1 = "Hello Krishna Reddy";
+        StringTokenizer st = new StringTokenizer(str1);
+        System.out.println("Number of words: " + st.countTokens());
+        while (st.hasMoreTokens()) {
+            System.out.println(st.nextToken());
+        }
+
+
+        String str2 = "Hello Krishna Reddy";
+        long count = Arrays.stream(str2.split(" ")).count();
+        System.out.println("Number of words: " + count);
 
     }
 }

@@ -13,7 +13,7 @@ public class FiltersExamples1 {
         List<Integer> evenNumbers = new ArrayList<Integer>();
 
         //collect to other list and print
-        evenNumbers = values.stream().filter((n)->n%2==0).collect(Collectors.toList());
+        evenNumbers = values.stream().filter(n->n%2==0).collect(Collectors.toList());
         System.out.println("Collect and store to another List and print " + evenNumbers);
 
         //collect and print

@@ -8,9 +8,6 @@ public class Check2ArraysEquals {
         int[] array2 = {12, 56, 1};
         Arrays.sort(array2);
         Arrays.sort(array1);
-        for(int s:array1) {
-            System.out.println(s);
-        }
 
         //with Arrays class
         boolean isEquals = Arrays.equals(array1, array2);
@@ -19,6 +16,7 @@ public class Check2ArraysEquals {
         }else{
             System.out.println("2 Arrays are not same");
         }
+
 
         //with loop
         int array1length = array1.length;

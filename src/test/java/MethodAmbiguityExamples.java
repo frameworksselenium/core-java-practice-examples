@@ -7,11 +7,14 @@ When you call obj.sum(20,20), Java gets confused about which method to call beca
 */
 
 class MethodAmbiguityExamples {
-   // void sum(int a,long b){System.out.println("a method invoked");}
-    void sum(long a,int b){System.out.println("b method invoked");}
+
+    void sum(int a,long b){System.out.println("a method invoked which is having int and long");}
+
+    void sum(long a,int b){System.out.println("b method invoked which is having long and int");}
 
     public static void main(String args[]){
         MethodAmbiguityExamples obj=new MethodAmbiguityExamples();
-        obj.sum(20,20);//now ambiguity
+        obj.sum(20,(long)20);//now ambiguity
     }
+
 }

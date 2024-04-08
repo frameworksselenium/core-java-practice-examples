@@ -5,21 +5,20 @@ import java.util.Scanner;
 public class PrimeNumberFromGivenRange {
     //it shouls be > 1 and number should divisable with 1 or itself
     public static void main(String[] args){
-
-        for(int i=1; i<=100; i++) {
-            boolean isprime = true;
-            if (i>1) {
-                for (int j = 2; j<i; j++) {
-                    if (i%j == 0) {
-                        isprime = false;
-                    }
+//To calculate the quotient and remainder of two numbers in Java,
+// //you can use the division (/) and modulus (%) operators respectively.
+        for (int num = 2; num <= 100; num++) {
+            boolean isPrime = true;
+            for (int i = 2; i*i <= num; i++) {
+                if (num % i == 0) {
+                    isPrime = false;
+                    break;
                 }
-            } else{
-                isprime = false;
             }
-            if(isprime){
-                System.out.println(i + "");
+            if (isPrime && num > 1) {
+                System.out.println(num);
             }
         }
+
     }
 }
