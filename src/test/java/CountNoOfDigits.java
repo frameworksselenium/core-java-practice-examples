@@ -1,6 +1,7 @@
 public class CountNoOfDigits {
-
+    //count number of digits in a given number
     public static void main(String[] args){
+
         int num11 = 123456;
 
         int count11=0;

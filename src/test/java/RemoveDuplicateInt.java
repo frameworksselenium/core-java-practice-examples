@@ -1,7 +1,5 @@
 import java.util.Arrays;
 import java.util.HashSet;
-import java.util.LinkedHashSet;
-import java.util.Set;
 import java.util.stream.Collectors;
 
 public class RemoveDuplicateInt {
@@ -33,10 +31,8 @@ public class RemoveDuplicateInt {
         HashSet set1 = new HashSet<>();
         char[] charArrray1 = temp.toCharArray();
         for(char c:charArrray1) {
-            set1.add(Character.valueOf(c));
+            set1.add(c);
         }
-
         System.out.println("After  removing the duplicate characters " + set1);
-
     }
 }

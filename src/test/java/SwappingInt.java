@@ -34,7 +34,7 @@ public class SwappingInt {
         //4 logic with ^
         val1 = 10;
         val2 = 20;
-       val1 = val1 ^ val2;//10+20=30
+        val1 = val1 ^ val2;//10+20=30
         val2 = val1 ^ val2;//30-20=10
         val1 = val1 ^ val2;//30-10=20
         System.out.println("Value1 values is '" + val1 + "'");

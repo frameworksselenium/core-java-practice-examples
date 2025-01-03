@@ -2,8 +2,9 @@ import java.util.ArrayList;
 import java.util.Scanner;
 
 public class PrintEvenOddNumberinGivenRange {
-
+    //
     public static void main(String[] args){
+
         Scanner sc=new Scanner(System.in);
         int lower=sc.nextInt();
         int upper=sc.nextInt();

@@ -1,9 +1,12 @@
+import java.lang.reflect.Array;
 import java.util.Arrays;
 
 public class Check2ArraysEquals {
 
+    //
     public static void main(String[] args){
 
+        //Approach 1
         int[] array1 = {12, 1, 56};
         int[] array2 = {12, 56, 1};
         Arrays.sort(array2);
@@ -17,10 +20,12 @@ public class Check2ArraysEquals {
             System.out.println("2 Arrays are not same");
         }
 
-
+        //approach 2
         //with loop
         int array1length = array1.length;
         int array2length = array2.length;
+        Arrays.sort(array2);
+        Arrays.sort(array1);
         boolean status = true;
         if (array1length == array2length){
 
@@ -29,6 +34,7 @@ public class Check2ArraysEquals {
                 int val2 = array2[i];
                 if(val2!=val1){
                     status = false;
+                    break;
                 }
             }
         }else{

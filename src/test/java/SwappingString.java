@@ -12,6 +12,7 @@ public class SwappingString {
         System.out.println("Value1 values is '" + val1 + "'");
         System.out.println("Value2 values is '" + val2 + "'");
 
+
         //Logic 2 with Concat
         val1 = "Krishna";
         val2 = "Reddy";

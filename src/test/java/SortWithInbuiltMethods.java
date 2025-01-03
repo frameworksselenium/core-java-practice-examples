@@ -35,8 +35,28 @@ public class SortWithInbuiltMethods {
             System.out.println(dd22.get(i));
         }
 
+        //Logic5
+        int array44[] = {23,56,1,2,3};
+        array44 = Arrays.stream(array44).sorted().toArray();
+        System.out.println("Values after sorting the array " + Arrays.toString(array44));
+
+        //Logic6
+        Integer[] array444 = Arrays.stream(array44).boxed().sorted(Collections.reverseOrder()).toArray(Integer[]::new);
+        System.out.println("Values after sorting the array " + Arrays.toString(array444));
+
+
         /// String sorting
         //logic1
+        String[] array23 = {"Krishna", "Apple"};
+        Arrays.sort(array23);
+        System.out.println("After sorting array element order" + Arrays.toString(array23));
+
+        //Logic2
+        String[] array24 = {"Krishna", "Apple"};
+        Arrays.sort(array24, Collections.reverseOrder());
+        System.out.println("After sorting array element order" + Arrays.toString(array24));
+
+        //Logic3
         //Reverse order
         String[] array2 = {"Krishna", "Apple"};
         List dd3 = Arrays.asList(array2);
@@ -45,7 +65,7 @@ public class SortWithInbuiltMethods {
             System.out.println(dd3.get(i));
         }
 
-        //logic2
+        //logic4
         // Natural
         String[] array21 = {"Krishna", "Apple"};
         List dd4 = Arrays.asList(array21);
@@ -54,5 +74,14 @@ public class SortWithInbuiltMethods {
             System.out.println(dd4.get(i));
         }
 
+        //Logic5
+        String[] array26 = {"Krishna", "Apple"};
+        String[] array27 = Arrays.stream(array26).sorted().toArray(String[]::new);
+        System.out.println("Values after sorting the array " + Arrays.toString(array27));
+
+        //Logic6
+        String[] array28 = {"Krishna", "Apple"};
+        String[] array29 = Arrays.stream(array28).sorted(Collections.reverseOrder()).toArray(String[]::new);
+        System.out.println("Values after sorting the array " + Arrays.toString(array29));
     }
 }

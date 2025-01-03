@@ -1,6 +1,6 @@
 package multithreading;
 
-public class ParallelExecutor1 implements Runnable {
+public class ParallelExecutor1 implements Runnable{
 
     private String executionType = null;
     private String browser = null;
@@ -11,7 +11,7 @@ public class ParallelExecutor1 implements Runnable {
     }
 
     @Override
-    public void run() {
+    public void run() {//The run() method in the Runnable interface does not return a value
         System.out.println("Thread ID is : " + Thread.currentThread().getId());
     }
 }

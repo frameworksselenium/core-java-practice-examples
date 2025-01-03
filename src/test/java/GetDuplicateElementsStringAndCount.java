@@ -3,18 +3,18 @@ import java.util.HashSet;
 
 public class GetDuplicateElementsStringAndCount {
 
+    // Find duplicate elements in an array and print the count of each element
     public static void main(String[] args){
-        // get duplicate elements from string array and count
+
         ///Solution:1
-        //remove duplicates
-        String[] strArry = {"Krishna", "Sritan", "Krishna", "Anusha", "Sritan"};
-       HashSet set = new HashSet();
+       String[] strArry = {"Krishna", "Sritan", "Krishna", "Anusha", "Sritan"};
+       HashSet<String> set = new HashSet();
         for(String a:strArry){
             set.add(a);
         }
 
-        for(Object s:set){
-            String name1 = (String)s;
+        for(String s:set){
+            String name1 = s;
             int c = 0;
             for(int j=0; j<strArry.length; j++){
                 String name2 = strArry[j];
@@ -22,7 +22,9 @@ public class GetDuplicateElementsStringAndCount {
                     c++;
                 }
             }
-            System.out.println("Name '" + name1 + "' has repeated '" + c + "' times");
+            if(c>1){
+                System.out.println("Name '" + name1 + "' has repeated '" + c + "' times");
+            }
         }
 
 
@@ -35,8 +37,8 @@ public class GetDuplicateElementsStringAndCount {
             set1.add(a);
         }
 
-        for(Object s:set1){
-            Integer name1 = (Integer)s;
+        for(Integer s:set1){
+            Integer name1 = s;
             int c = 0;
             for(int j=0; j<strArry11.length; j++){
                 int name2 = strArry11[j];
@@ -44,7 +46,9 @@ public class GetDuplicateElementsStringAndCount {
                     c++;
                 }
             }
-            System.out.println("Name '" + name1 + "' has repeated '" + c + "' times");
+            if(c>1){
+                System.out.println("Name '" + name1 + "' has repeated '" + c + "' times");
+            }
         }
     }
 }

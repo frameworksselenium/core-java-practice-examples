@@ -14,7 +14,8 @@ class MethodAmbiguityExamples {
 
     public static void main(String args[]){
         MethodAmbiguityExamples obj=new MethodAmbiguityExamples();
-        obj.sum(20,(long)20);//now ambiguity
+        obj.sum(20,(long)20);//no ambiguity
+        //obj.sum(20,20);// ambiguity - compile time error
     }
 
 }

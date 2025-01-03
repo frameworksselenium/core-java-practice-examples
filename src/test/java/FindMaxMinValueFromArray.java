@@ -1,14 +1,12 @@
 import java.util.Arrays;
-import java.util.stream.Collectors;
 
 public class FindMaxMinValueFromArray {
-
+    //Find Max and Min value from Array
     public static void main(String[] args){
 
         int[] array = {12, 33, 56};
 
         //Logic1
-        //
         // find max val
         int max = array[0];
         for(int i=1; i<array.length; i++){
@@ -27,7 +25,9 @@ public class FindMaxMinValueFromArray {
         }
         System.out.println("Minimum Value from Array " + min);
 
+
         //Logic2
+        //min
         Arrays.sort(array);
         int min11 = array[0];
         System.out.println("Given numbers, min Number is :" + min11);
@@ -36,6 +36,7 @@ public class FindMaxMinValueFromArray {
         Arrays.sort(array);
         int max11 = array[array.length - 1];
         System.out.println("Given numbers, Largest Number is :" + max11);
+
 
         //logic 3
         // min
@@ -47,6 +48,5 @@ public class FindMaxMinValueFromArray {
         System.out.println("Minimum Value from Array " + max1);
 
     }
-
 
 }

@@ -1,9 +1,8 @@
 import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.Scanner;
 
 public class FibonacciSeriesGeneration {
-    //A series of numbers which each number is the sum of the 2 preceding number
+        //The Fibonacci series is a sequence of numbers in which
+    // each number is the sum of the two preceding ones
     public static void main(String[] args) {
 
         int endNumber = 10;
@@ -16,6 +15,5 @@ public class FibonacciSeriesGeneration {
             num2 = sum;
         }
         System.out.println("Fibonacci numbers " + fs);
-
     }
 }

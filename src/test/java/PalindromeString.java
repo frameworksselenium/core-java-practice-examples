@@ -1,12 +1,13 @@
+import java.util.Scanner;
 
 public class PalindromeString {
     public static void main(String[] args){
         //approach1
 
-        /*Scanner scan = new Scanner(System.in);
-        System.out.println("Please enter string");
-        String value = scan.next();*/
-        String value  = "Krishna";
+        //Scanner scan = new Scanner(System.in);
+        //System.out.println("Please enter string");
+        //String value = scan.next();
+        String value  = "wternju";
         String rev="";
         for (int i=value.length()-1; i>=0; i--){
          rev = rev + value.charAt(i);

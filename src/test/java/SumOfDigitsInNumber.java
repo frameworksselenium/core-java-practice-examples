@@ -17,8 +17,9 @@ public class SumOfDigitsInNumber {
         int sum = 0;
         for (char c : strNum.toCharArray()) {
             //convert chat to int
-            int cc = Character.getNumericValue(c);
-                sum = sum+cc;
+            int cc = Integer.parseInt(String.valueOf(c));
+            //int cc = Character.getNumericValue(c);
+            sum = sum + cc;
         }
         System.out.println("Sum of number: " + sum);
     }

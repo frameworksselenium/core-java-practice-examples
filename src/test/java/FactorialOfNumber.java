@@ -1,7 +1,8 @@
 import java.util.Random;
 
 public class FactorialOfNumber {
-    //A factorial is a function that multiplies a number by every number below it.
+    //Factorial means: multiply a number by every number below it.
+    //write a program to find factorial of a number
     public static void main(String[] args){
 
         int num = 5;
@@ -10,7 +11,6 @@ public class FactorialOfNumber {
             fact  = fact * i;
         }
         System.out.println("factorial :" + fact);
-
     }
 
 }
